@@ -1,0 +1,335 @@
+.. meta::
+   :title: Change Management SOP
+   :author: Pierce Devol (pdevol@grailbio.com)
+   :kb: KB0010143
+
+#####################
+Change Management SOP
+#####################
+
+.. container:: 
+   :sopnum:
+
+.. sectnum::
+   :start: 1
+Purpose
+=======
+
+This document is designed to outline a simple process for change
+management.
+
+Scope
+=====
+
+This document describes change management process for the IT team
+to use when implementing changes to the GRAIL production
+environment.
+
+Responsibilities
+================
+
+The IT department is responsible for managing the change process
+as described in this document.
+
+Acronyms and Definitions
+========================
+
+
+=========================== ============= ==============================================================================================================================
+**TERM**                    **REFERENCE** **DEFINITION**
+=========================== ============= ==============================================================================================================================
+Change                                    A change is any alteration to a production environment. Examples include: firewall patching, server upgrades, and DNS changes.
+Standard Change                           Standard Changes are pre-approved with clearly defined, tested, and repeatable steps with a proven history of success
+Emergency Change                          Emergency Changes occurs out of necessity required to fix an ongoing or impending issue.
+Normal Change                             All other changes that are not an emergency or standard change.
+Request for Change (RFC)                  A required document that is submitted to the Change Advisory Board (CAB) for approval before implementing change.
+Change Advisory Board (CAB)               A board that reviews change requests. The CAB determines the benefit and impact to the business.
+=========================== ============= ==============================================================================================================================
+
+
+Change Types
+============
+
+**Standard Change**
+-------------------
+
+
+Standard changes are ones that are frequently implemented, have
+repeatable implementation steps, and have a proven history of
+success.
+
+ - A standard change follows a standard template.
+
+ - Standard changes are pre-approved.
+
+ - Standard changes follow a streamlined process in which Change
+   Advisory Board (CAB) authorization steps are not required.
+
+**Emergency Change**
+--------------------
+
+Emergency changes do not follow the same process as normal changes as
+they are urgent and require rapid implementation.
+
+8.  Emergency changes do not require a Request for Change (RFC) at
+    first.
+
+9.  File an Emergency Change Request (ECR) ticket, in place of the RFC
+    to provide tracking.
+
+10. Emergency changes proceed directly to the Change Advisory Board
+    (CAB) for authorization to declare a state of emergency.
+
+11. Emergency changes involve:
+
+12. Fix on fail for retroactive situations where the impact to
+          service has already been experienced
+
+13. Fix or fail situations where the impact to a service is imminent
+          if action is not taken.
+
+**Normal Change**
+-----------------
+
+Any production change that is not a standard change or an emergency
+change falls under this category
+
+12. Normal changes go through the standard review process through the
+       Change Advisory Board (CAB).
+
+13. You are required to submit a Request for Change document (RFC) to
+       the CAB for review.
+
+14. A normal change must be authorized by the CAB.
+    The CAB reviews the RFC to ensure that the change is successfully
+    implemented. They review the RFC for the following information to
+    check for completeness, accuracy, potential issues, or disruptions to
+    service:
+
+    A. Reasons for change
+
+    B. Implementation plan
+
+    C. Cost Benefit Analysis
+
+    D. Impact Assessment
+
+Accepted justifications for a Request for Change (RFC):
+-------------------------------------------------------
+
+
+1. Incident causes a new change
+
+2. A known problem leads to a change
+
+3. An end user requests for a change to the production environment.
+
+4. Required maintenance for the production environment.
+
+5. Upgrades to the production environment.
+
+An RFC proposal contains the following information:
+---------------------------------------------------
+
+
+1. Reasons for change:
+   A. Explain why this change must be implemented.
+      
+          Example:
+              Upgrading the Palo Alto from version 1 to 1.25 implements a new
+              feature that will allow for the creation of more robust reporting
+
+2. Implementation plan
+   
+   B. List any involved devices:
+      
+          Example: 
+              Both Palo Alto devices, located at IPs x.x.x.x and y.y.y.y
+              in rack 20 and 21 respectively.
+   
+   C. List the steps you will take to implement this change. 
+      
+          Example:
+              1. Download firmware package.
+              2. Backup current configuration.
+              3. Upload new firmware package.
+              4. Install new package.
+              5. Run test to ensure package installation was successful.
+   
+   D. List required steps to rollback the change if necessary. 
+      
+          Example:
+              1. Upload backup configuration.
+              2. Restore backup configuration.
+              3. Run test to ensure backup restore was successful.
+
+3. Cost Benefit Analysis
+
+    E. State the costs related to this change: Example: The financial
+       cost is zero, firmware packages are free from the
+       manufacturer.
+
+    F. State the time required to implement this change.
+
+            Example: 
+                The firmware update will take one hour to apply.
+
+    G. What benefits does the company gain from this change or what are the
+       consequences if this change is not implemented?
+   
+            Example: 
+                By implementing this, the new reporting features allow us to
+                better track network usage and offer security insights in case of
+                intrusion.
+
+4. Impact Assessment
+
+    A. Explain what groups will be impacted by this change.
+   
+            Example: 
+                The firewalls are on the lab network , all teams that
+                utilize the lab will be affected for the hour window required to
+                perform the upgrade.
+
+    B. Explain the impact to the production resources.
+
+            Example: 
+                The firewall upgrade will have no short term or long term
+                impacts to rackspace, network bandwidth or any other perceived
+                production resources.
+
+    C. Give a risk assessment value of high, medium, or low.
+
+Creating Standard Change Requests
+=================================
+
+
+Create a Problem ticket in the IT service desk using the [Standard CR] template.
+--------------------------------------------------------------------------------
+
+1. Use the appropriate template in ServiceNow.
+
+2. Add the IT manager as a watcher to the work notes list.
+
+3. Propose a time to implement the change or request assistance in
+   finding a time. Then submit the ticket.
+
+Creating Emergency Change Requests
+==================================
+
+Create a Problem ticket in the IT service desk portal using the [Emergency CR] template.
+----------------------------------------------------------------------------------------
+
+1. Add the IT manager as a watcher to the work notes list.
+
+2. Inform the CAB about the situation. Request approval to
+   implement an emergency change.
+
+3. After the emergency change has been implemented, and the fix
+   has been verified, complete an RFC to
+   submit with the change request request.
+
+Creating Normal Change Requests
+===============================
+
+Create a Problem ticket in the IT service desk portal using the [Normal CR] template, followed by a short description of the change.
+------------------------------------------------------------------------------------------------------------------------------------
+1. Include an RFC proposal in the ticket with all of the
+   information described in section 9:
+   A. Reasons for change
+   B. Implementation plan
+   C. Cost Benefit Analysis
+   D. Impact Assessment
+2. Add the IT manager as a watcher to the work notes list.
+3. Propose a time to implement the change or request assistance in
+   finding a time. Bring RFC to CAB board for approval
+
+Change Advisory Board (CAB)
+===========================
+
+The Change Advisory Board (CAB) is a team that includes IT and Business representatives.
+----------------------------------------------------------------------------------------
+
+1. The CAB approves the Requests for Change (RFC) and assists with
+   the impact assessment and prioritization of
+   changes.
+2. A CAB is often made up of several members. These can include the following:
+   
+   A. Service Desk Analyst or Service Desk Manager.
+      
+      a. Provides insight as to common issues with service delivery and how to troubleshoot them.
+   
+   B. Operations Managers
+      
+      a. Provides insight as to common issues with service delivery and how to troubleshoot them.
+      b. Provides insight about the day-to-day operations.
+   
+   C. Information Security Officer
+      a. Provides knowledge of potential threats and vulnerabilities to applications and systems
+   
+   D. Senior Network/Systems Engineer
+      a. Provides knowledge of potential threats and vulnerabilities to applications and systems
+
+3. Functions of the CAB
+   A. Assess risks and consequences of requested changes.
+   B. Review Requests for Change (RFC) to assist in writing the impact assessment and prioritizing changes.
+   C. Ensure any additional documentation is created.
+   D. Notify the business of scheduled and unscheduled changes.
+
+4. Provide clarification and updates regarding the changes as needed.
+5. Participate in continuous improvement initiatives for the change management process.
+6. Dive deep into upcoming changes as needed.
+7. Offer support in mitigating impact and risk.
+
+
+CAB Meetings
+============
+
+CAB meetings follow a standard agenda. Each meeting’s agenda should include:
+----------------------------------------------------------------------------
+
+1. Review items discussed in the previous CAB meeting:
+   
+   - Any changes implemented in the previous period
+   - Any failed changes
+   - Any successful changes
+   - Any changes the team did not implement
+   - Incidents that occurred as a result of change
+
+2. Review Requests for Change (RFCs).
+   
+   A. Review impact assessment
+   B. Review Costs
+
+3. Review risk and overall impact
+   
+   A. How are services impacted?
+   B. How are service levels impacted?
+   C. How will this change impact performance?
+   D. How will resources be tasked?
+   E. What impact does this have on security and compliance initiatives?
+   F. What impact can we expect on finances?
+
+4. Review impact to system resources.
+5. Prioritize change requests.
+6. Emergency CAB Meetings may be scheduled by managers to address urgent needs.
+   
+   A. Acceptable justifications for an emergency CAB meeting:
+      
+      a. Any event that disrupts critical business functions.
+      b. Any security event that involves a breach of sensitive.
+         business systems.
+
+Turning a Normal Change into a Standard Change
+==============================================
+
+A normal change may be turned into a standard change if it meets certain requirements. A proposal needs to be submitted and provide:
+------------------------------------------------------------------------------------------------------------------------------------
+
+1. Three cases of this normal change was successfully implemented
+   without causing additional impact.
+   
+   A. Step by step instructions that can be turned into a template.
+   B. Must provide a template that documents these steps.
+   C. Must have approval from CAB.
+   D. Must create a separate ticket for this.

@@ -1,0 +1,58 @@
+
+<style>
+  	h1 {
+  		color: #602B5B;
+  		font-size: 20px;
+		font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+
+
+  	}
+  	h2 {
+  		font-size: 17px;
+  		color: #602B5B;
+		font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+		text-decoration: underline;
+
+
+  	}
+  	h3 {
+  		font-size: 17px;
+  		color: #1F6784;
+		font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+
+  	}
+  
+  	h4 {
+  		font-size: 16px;
+		color: #B58C66;
+		font-family:Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+		font-style: italic;
+
+  	}
+  	h5 {
+  		font-size: 16px;
+  		color: #69b566;
+		font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+		text-decoration: underline;
+  	:
+
+
+ ul {
+	list-style-position: outside;
+ 	margin: 4px;
+	padding: 4px;
+	}		
+     
+ol {
+	list-style-position: outside;
+	margin: 4px;	
+	padding: 4px;
+	}
+
+li {
+	list-style-position: inside;
+ 	margin: 4px;
+	padding: 4px;
+	}
+
+
