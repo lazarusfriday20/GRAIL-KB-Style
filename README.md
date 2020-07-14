@@ -1,1 +1,1 @@
-# GRAILKB_CSS
+# GRAIL KB Style
