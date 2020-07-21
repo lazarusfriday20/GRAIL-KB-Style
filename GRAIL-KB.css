@@ -795,9 +795,8 @@ span pre {
     background-color: #D9D9D9; 
 	font-family: 'Share Tech Mono', monospace; }
 
-code em {
-	color: #c7254e;
-	}
+em, code {
+	color: #c7254e; }
 
 samp {
 	border: 1px solid #efefef;
