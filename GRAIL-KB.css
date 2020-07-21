@@ -784,7 +784,7 @@ span.section-subtitle {
 /* Begin custom table settings */
 
 
-code.samp.docutils.literal.notranslate em span.pre {
+code samp docutils literal notranslate em span pre {
 	border: 1px solid #efefef;
 	color: #c7254e; 
     background-color: #D9D9D9; }
