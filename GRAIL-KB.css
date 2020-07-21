@@ -230,6 +230,20 @@ code em span.pre {
     background-color: #D9D9D9; 
 	font-family: 'Share Tech Mono', monospace; }
 
+	
+li p code em span.pre {
+	border: 1px solid #efefef;
+	color: #c7254e ! important;  
+    background-color: #D9D9D9; 
+	font-family: 'Share Tech Mono', monospace; }
+
+p code em span.pre {
+	border: 1px solid #efefef;
+	color: #c7254e ! important;  
+    background-color: #D9D9D9; 
+	font-family: 'Share Tech Mono', monospace; }
+
+
 
 samp {
 	border: 1px solid #efefef;
