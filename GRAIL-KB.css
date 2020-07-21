@@ -796,7 +796,7 @@ span pre {
 	font-family: 'Share Tech Mono', monospace; }
 
 code em {
-	color: #D33682;
+	color: #c7254e;
 	}
 
 samp {
@@ -805,16 +805,9 @@ samp {
     background-color: #D9D9D9; }
 
 
-samp, em {
-  
-	color: #D33682;
-}
-
 h1 tt.docutils, h2 tt.docutils, h3 tt.docutils,
 h4 tt.docutils, h5 tt.docutils, h6 tt.docutils {
   font-size: 100% }
 
 ul.auto-toc {
   list-style-type: none }
-
-</style>
