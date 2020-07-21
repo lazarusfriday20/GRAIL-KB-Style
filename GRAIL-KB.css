@@ -789,11 +789,6 @@ span.section-subtitle {
 /* Begin custom table settings */
 
 
-span.pre em span.pre {
-	border: 1px solid #efefef;
-	color: #c7254e; 
-    background-color: #D9D9D9; }
-	
 pre { 
 	border: 1px solid #efefef;
     color: #1F6683;
@@ -805,8 +800,8 @@ span pre {
     color: #c7254e;
     background-color: #D9D9D9; 
 	font-family: 'Share Tech Mono', monospace; }
-code em
-{
+
+code em {
 	border: 1px solid #efefef;
 	color: #c7254e ! important;  
     background-color: #D9D9D9; 
