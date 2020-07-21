@@ -198,9 +198,9 @@ h6 {
 
 code {
 		border: 1px solid #efefef;
+		padding: 0 2px;
 		font-size: .95em;
-		border-style: Roboton
-
+		border-style: Roboton;
 		color: #1F6683;
 		background-color: #D9D9D9;	
 		font-family: 'Share Tech Mono', monospace; }
@@ -746,7 +746,7 @@ pre.address {
 
 pre.literal-block, pre.doctest-block, pre.math, pre.code {
   margin-left: 2em ;
-  margin-right: 2em ;}
+  margin-right: 2em ; }
 
 .pep-page pre.literal-block
 
@@ -805,6 +805,13 @@ span pre {
     color: #c7254e;
     background-color: #D9D9D9; 
 	font-family: 'Share Tech Mono', monospace; }
+code em
+{
+	border: 1px solid #efefef;
+	color: #c7254e ! important;  
+    background-color: #D9D9D9; 
+	font-family: 'Share Tech Mono', monospace; }
+
 
 code em span.pre {
 	border: 1px solid #efefef;
