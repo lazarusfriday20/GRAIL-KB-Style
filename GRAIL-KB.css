@@ -125,37 +125,38 @@ body{
 p {
 	--webkit-font-smoothing: antialiased;
 	font-family: 'Lato', sans-serif;
-	font-size: 16px;
 	font-weight: thin; }
 
 title {
   		color: var(--gb-velvet); 	
 		--webkit-font-smoothing: antialiased;
 		font-size: var(--gb-h1);
+		margin-bottom: 0.5em;
+		margin-top: 0.5em; 
 		font-family: 'Roboto', sans-serif;
-		margin: 2em;
    		font-weight: 300; }
 
 
 h1 {
-    margin-block-start: 2em;
-    margin-block-end: 2em;
 	color: var(--gb-velvet);  	
 	--webkit-font-smoothing: antialiased;
 	font-size: var(--gb-h1);
 	font-family: 'Roboto', sans-serif;
+	margin-top: 0.5em; 
+	margin-bottom: 0.5em;
 	font-weight: 700; 
 }
 
 h2 { 	
-		--webkit-font-smoothing: antialiased;
-    	color: var(--gb-gold); 
-		font-size: var(--gb-h2);
-		font-family: 'Roboto Condensed', sans-serif; 
-		margin-top: 0.5em; 
-		margin-bottom: 0.5em;
-		font-style: italic; 
-		font-weight: 600; }
+
+	--webkit-font-smoothing: antialiased;
+	color: var(--gb-gold); 
+	font-size: var(--gb-h2);
+	font-family: 'Roboto Condensed', sans-serif; 
+	margin-top: 0.5em; 
+	margin-bottom: 0.5em;
+	font-style: italic; 
+	font-weight: 600; }
   
 h3 { 	
 		--webkit-font-smoothing: antialiased;
