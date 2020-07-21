@@ -1,5 +1,3 @@
-
-
 /*
 :Author: David Goodger (goodger@python.org)
 :Id: $Id: html4css1.css 7952 2016-07-26 18:15:59Z milde $
@@ -199,6 +197,9 @@ h6 {
    	    font-style: bold; }
 
 code {
+		border: 1px solid #efefef;
+		color: #1F6683;
+		background-color: #D9D9D9;	
 		font-family: 'Share Tech Mono', monospace; }
 
 a {
@@ -726,23 +727,23 @@ p.rubric {
 p.sidebar-title {
   font-family: sans-serif ;
   font-weight: bold ;
-  font-size: larger }
+  font-size: larger; }
 
 p.sidebar-subtitle {
   font-family: sans-serif ;
-  font-weight: bold }
+  font-weight: bold; }
 
 p.topic-title {
-  font-weight: bold }
+  font-weight: bold; }
 
 pre.address {
   margin-bottom: 0 ;
   margin-top: 0 ;
-  font: inherit }
+  font: inherit ;}
 
 pre.literal-block, pre.doctest-block, pre.math, pre.code {
   margin-left: 2em ;
-  margin-right: 2em }
+  margin-right: 2em ;}
 
 pre.code .ln { color: grey; } /* line numbers */
 pre.code, code { background-color: #eeeeee }
@@ -755,23 +756,28 @@ pre.code .inserted, code .inserted { background-color: #A3D289}
 
 span.classifier {
   font-family: sans-serif ;
-  font-style: oblique }
+  font-style: oblique; }
 
 span.classifier-delimiter {
-  font-family: sans-serif ;
-  font-weight: bold }
+  font-family: sans-serif 
+  font-weight: bold; }
 
 span.interpreted {
-  font-family: sans-serif }
+  font-family: sans-serif; }
 
 span.option {
-  white-space: nowrap }
+  white-space: nowrap; }
 
 span.pre {
-  white-space: pre }
-
+  white-space: pre;
+ }
+em span.pre {
+    color: #D33682;
+    font-weight: bold;
+    background-color: #D9D9D9 }
+ 
 span.problematic {
-  color: red }
+  color: red; }
 
 span.section-subtitle {
   /* font-size relative to parent (h1..h6 element) */
@@ -783,8 +789,14 @@ pre {
 	background-color: var(--gb-dark-grey);
 	font-family: 'Share Tech Mono', monospace; }
 
+samp {
+	border: 1px solid #efefef;
+    color: #1F6683;
+    background-color: #D9D9D9; }
+
 samp, em {
-  color: #D33682;
+  
+	color: #D33682;
 }
 
 h1 tt.docutils, h2 tt.docutils, h3 tt.docutils,
