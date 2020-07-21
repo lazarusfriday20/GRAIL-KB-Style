@@ -10,45 +10,38 @@ customize this style sheet.
 */
 
 
-/* used to remove borders from tables and images */
-
-
 /* Adapted by Pierce Devol for use with clients */
 /*
 /* Currently hosted on Google drive. Use this link to embed */
 /* https://drive.google.com/uc?export=view&id=1yT9a6eeTEV796aTjeNjKAFPS6qnfri_G */
 
+/* embed using
+ * <link rel="stylesheet" type ="text/css" href="https://drive.google.com/uc?export=view&id=1yT9a6eeTEV796aTjeNjKAFPS6qnfri_G"/> */
 /* instructions say to do the line, I'm not sure why. */
 /* Also make sure that you import html4css1.css (using "@import url(html4css1.css);") because the definitions contained in the default stylesheet are required for correct rendering (margins, alignment, etc.). */
 
-@import url(html4css1.css);
+/* working on self hosting buying font awesome */
+/* <script src="https://kit.fontawesome.com/0a8573869c.js" crossorigin="anonymous"></script> */
 
+@import url(html4css1.css);
+/* start root */
 :root {
 
 /* base font */
 /* open to suggestions */
-	font-family: "Sailec-Regular",system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;
-/* Style guidelines
- *
- * Font Scale:
- * 	This stylesheet follows a major third visual type scale
- * 	according to https://type-scale.com/. 
- * 	Base font size is defined below */ 
-
+	font-family: 'Lato', sans-serif;
 	font-size: 16px;
-	ms-text-size-adjust: 100%;
-	webkit-text-size-adjust: 100%; 
+	font-weight: thin;
+	--ms-text-size-adjust: 100%;
+	--webkit-text-size-adjust: 100%; 
 	--webkit-font-smoothing: antialiased;
 	overflow-x: auto;
 	max-width: auto;
-
 /* GRAIL Colors */
-
 /* Velvet */
 /* this one is not used in main logo */
-	--gb-velvet:  #602B5B; 
+	--gb-velvet: #602B5B; 
 /* Deep purple */
-/* Currently not used in sheet */
 	--gb-deep-purple: #3B1C52; 
 /* Gold */
 /* used in logo */
@@ -60,36 +53,130 @@ customize this style sheet.
 /* Light Grey */
 	--gb-light-grey: #D9D9D9;
 /* Dark Grey */
-	--gb-dark-grey: #404040; }
+	--gb-dark-grey: #404040; 
+/* Style guidelines
+ *
+ * Font Scale:
+ * 	This stylesheet follows a major third visual type scale
+ * 	according to https://type-scale.com/. 
+ * 	Base font size is defined below */ 
+	--gb-h1: 3.052em; 
+	--gb-h2: 2.441em;
+	--gb-h3: 1.953em;
+	--gb-h4: 1.563em;
+	--gb-h5: 1.250em;
+	--gb-small: 0.8em;
+	color: var(--gb-dark-grey);
+	font-weight: thin; }
 
+/* end root */
 
-body {
-		font-size: 1rem;
-		font-stretch: ultra-condensed;
-		color: dark grey; }
+/* other media */
+
+.document {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.3125rem;
+  max-width: 48rem;
+}
+@media (min-width: 320px) {
+  /* smartphones, iPhone, portrait 480x320 phones */
+  .document {
+    width: auto;
+  }
+}
+@media (min-width: 481px) {
+  /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+  .document {
+    width: auto;
+  }
+}
+@media (min-width: 641px) {
+  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+  .document {
+    width: 620px;
+  }
+}
+@media (min-width: 961px) {
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+  .document {
+    width: 940px;
+  }
+}
+@media (min-width: 1025px) {
+  /* big landscape tablets, laptops, and desktops */
+  .document {
+    width: 940px;
+  }
+}
+@media (min-width: 1281px) {
+  /* hi-res laptops and desktops */
+  .document {
+    width: 940px;
+  }
+}
+
+p {
+	margin-top: 8px; 
+	margin-bottom 8px; 
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;
+	font-weight: thin;
+	}
 
 h1 {
   		color: var(--gb-velvet); 
-	    line-height: 1.10em;
-  		font-size: 1.953em; }
+		font-size: var(--gb-h1);
+		font-family: 'Roboto', sans-serif;
+		margin-top: 8px; 
+		margin-bottom 8px;
+		font-weight: 650; }	
 
 h2 {
-  		color: #612B5B; 
-  		font-size: 1.563em;
-	    text-decoration: underline;
-		font-stretch: ultra-condensed; }
+  		color: var(--gb-velvet);
+		font-size: var(--gb-h2);
+		margin-top: 8px; 
+		margin-bottom 8px;	
+		font-family: 'Roboto', sans-serif;
+   		font-weight: 250; }
 
 h3 {
-		font-size: 1.25em;
-  		color: #612B5B; 
-		text-decoration: underline; }
+		color: var(--gb-gold); 
+		font-size: var(--gb-h3);
+		font-family: 'Roboto', sans-serif;
+		margin-top: 8px; 
+		margin-bottom 8px;
+		font-style: italic; 
+		font-weight: 550; }
   
-h4 {
-		color: #1F6683; 
-		font-style: italic; }
+h4 {	
+  		margin-top: 8px; 
+		margin-bottom 8px;
+		color: var(--gb-dusty-blue); 
+		font-size: var(--gb-h4);
+		font-family: 'Roboto', sans-serif;
+		font-weight: 400;
+   	    text-decoration: underline; }
+
 h5 {
+  		margin-top: 8px; 
+		margin-bottom 8px;
+		color: var(--gb-dusty-blue); 
   		color: var(--gb-dark-grey); 
-		text-decoration: underline; }
+		font-size: var(--gb-h5);  
+		font-family: 'Roboto', sans-serif;
+   	    font-style: bold; }
+h6 {
+  		margin-top: 8px; 
+		margin-bottom 8px;
+		color: var(--gb-dusty-blue); 
+  		color: var(--gb-dusty-teal); 
+		font-size: var(--gb-h6);
+		font-family: 'Roboto', sans-serif;
+   	    font-style: bold; }
+
+code {
+		font-family: 'Share Tech Mono', monospace; }
 
 a {
 	text-decoration: underline; ! important;
@@ -105,50 +192,121 @@ a:visited {
   text-decoration-color: 1em var(--gb-gold) ! important; }
 
 
+h1 small,
+h2 small,
+h3 small,
+h4 small,
+h5 small,
+h6 small,
+.h1 small,
+.h2 small,
+.h3 small,
+.h4 small,
+.h5 small,
+.h6 small,
+h1 .small,
+h2 .small,
+h3 .small,
+h4 .small,
+h5 .small,
+h6 .small,
+.h1 .small,
+.h2 .small,
+.h3 .small,
+.h4 .small,
+.h5 .small,
+.h6 .small {}  
 
-table {
-  margin-top: 8.8px;
-  margin-bottom: 30.8px;
-  empty-cells: hide;
-  max-width: 100%;
-  margin: 5px 0;
-  border-spacing; .25rem;
-  border: .01rem solid black;
-  border-collapse: collapse;
+
+small { font-size: 80%; }
+
+sub,
+sup {
+  font-size: 75%;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5rem; }
+
+sub {
+  bottom: -0.25rem; } 
+
+svg:not(:root) {
+	overflow: hidden; } 
+
+/* Table stuff */
+
+th {
+	border: 1px solid var(--gb-light-grey);
+	padding: 4px; }
+
+td {
+	border: 1px solid var(--gb-light-grey);
+     padding: 4px; }
+
+table.docinfo {
+  margin: 2em 4em }
+
+table.docutils {
+  margin-top: 0.5em ;
+  margin-bottom: 0.5em }
+
+table.footnote {
+  border-left: solid 1px black;
+  margin-left: 1px }
+
+table.docutils td, table.docutils th,
+table.docinfo td, table.docinfo th {
+  padding-left: 0.5em ;
+  padding-right: 0.5em ;
+  vertical-align: top }
+
+table.docutils th.field-name, table.docinfo th.docinfo-name {
+  font-weight: bold ;
+  text-align: left ;
+  white-space: nowrap ;
+  padding-left: 0 }
+
+
+table tr {
   text-align: left;
   padding: 8.8px;
-  vertical-align: top; }
+  vertical-align: top;
 
-/* consider making text in table smaller? more condensed? */
-
+  }
 thead th {
 	color: var(--gb-gold);
 	background-color: var(--gb-light-grey);
 	text-align: left;
-	vertical-align: center; }
+	vertical-align: center;
+	font-size: var(--gb-h5); }
 
 th {
 	border: 1px solid black;
-	padding: 4px; }
+	padding: 4px; 
+	font-size: 1em;
+	font-family: 'Roboto Condensed', sans-serif; }
+	
 
 td {
 	 border: 1px solid black;
-	 padding: 4px; }
+	 padding: 4px; 
+	font-size: 1em;
+	font-family: 'Roboto Condensed', sans-serif; }
+	
 
 
 table.citation {
   width: auto;
   border-left: solid 2px #279cf5;
-  margin-left: 1px ;
-}
+  margin-left: 1px ; }
 
 table tr:nth-child(even) {
-  background-color: #D9d9d9;
-}
+  background-color: #D9d9d9; }
 
 table tr:nth-child(odd) {
-  background-color: white;
-}
+  background-color: white; }
 
 table ul li,
 table ol li {
@@ -166,12 +324,50 @@ table.citation tbody > tr:nth-child(odd) > th,
 table.docinfo tbody > tr:nth-child(odd) > td,
 table.docinfo tbody > tr:nth-child(odd) > th{}
 
-/* tables are almost done, fix head and other missing info */
+/* "booktabs" style (no vertical lines) */
+table.docutils.booktabs {
+  border: 0px;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  border-collapse: collapse;
+}
+table.docutils.booktabs * {
+  border: 0px;
+}
+table.docutils.booktabs th {
+  border-bottom: thin solid;
+  text-align: left;
+}
+
+table {
+  empty-cells: hide;
+  max-width: 100%;
+  margin: 5px 0;
+  border: .01rem solid black;
+  border-collapse: collapse;
+  margin-top: 8.8px;
+  margin-bottom: 30.8px;
+  empty-cells: hide;
+  max-width: 100%;
+  margin: 5px 0;
+  border-spacing; .25rem;
+  border: .01rem solid black;
+  border-collapse: collapse;
+  text-align: left;
+  padding: 8.8px;
+  vertical-align: top;
+  font-size: 1em; }
+
 
 
 /* lists */
 
+/* ol li { */
+/* ul li { */
+
 /* from htmlhtml4css1.css */
+
+
 
 /* Override more specific margin styles with "! important". */
 .first { margin-top: 0 ! important; }
@@ -195,6 +391,11 @@ a.toc-backref {
   text-decoration: none ;
   color: black }
 
+blockquote {
+	background-color: #eeeeee;
+	font-color: var(--gb-dark-grey); 
+	font-weight: 200; }
+
 blockquote.epigraph {
   margin: 2em 5em ; }
 
@@ -215,24 +416,65 @@ div.abstract p.topic-title {
   font-weight: bold ;
   text-align: center }
 
-div.admonition, div.attention, div.caution, div.danger, div.error,
-div.hint, div.important, div.note, div.tip, div.warning {
-  margin: 2em ;
-  border: medium outset ;
-  padding: 1em }
+/* admonitions */
 
-div.admonition p.admonition-title, div.hint p.admonition-title,
-div.important p.admonition-title, div.note p.admonition-title,
-div.tip p.admonition-title {
-  font-weight: bold ;
-  font-family: sans-serif }
+div.admonition {
+	border-left-style: solid;
+	border-left-width: 0.5rem; 
+    border-left-padding: .25rem; 
+	padding: 0.5rem;
+    text-align: left;
+    width: 80%;
+}
 
-div.attention p.admonition-title, div.caution p.admonition-title,
-div.danger p.admonition-title, div.error p.admonition-title,
-div.warning p.admonition-title, .code .error {
-  color: red ;
-  font-weight: bold ;
-  font-family: sans-serif }
+
+p.admonition-title {
+  font-weight: bold;
+  font-size: var(--gb-h4);
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+div.admonition {
+	margin: 3em;
+	padding-bottom: 1em;
+	padding-bottom: 1em;
+	max-width: 70%;
+}
+ 
+div.admonition.note, div.note {
+    border-left-color: #1F6683;
+    background-color: #d6ecf5;
+  }
+   
+div.admonition.tip, div.tip {
+    border-left-color: #008b17;
+    background-color: #ccffd5; 
+  }
+  
+div.admonition.warning, div.waring {
+    border-left-color: #ECA400;
+	background-color: #fff0cc;
+  }
+  
+div.admonition.notice, div.notice {
+    border-left-color: #ECA400;
+	background-color: #fff0cc;
+} 
+
+div.admonition.caution, div.caution {
+    border-left-color: #ECA400;
+	background-color: #fff0cc;
+  }
+   
+div.admonition.important, div.important {
+    border-left-color: #ec131a;
+    background-color: #fbd0d1;
+  }
+
+div.admonition.danger, div.danger {
+    border-left-color: #ec131a;
+    background-color: #fbd0d1; 
+ }
 
 /* Uncomment (and remove this text!) to get reduced vertical space in
    compound paragraphs.
@@ -454,71 +696,12 @@ span.section-subtitle {
 
 /* Begin custom table settings */
 
-table {
-  empty-cells: hide;
-  max-width: 100%;
-  margin: 5px 0;
-  border: .01rem solid black;
-  border-collapse: collapse;
-}
-
-table tr {
-  text-align: left;
-  padding: 8.8px;
-  vertical-align: top;
-
-  }
 
 
-
-
-
-th {
-	border: 1px solid var(--gb-light-grey);
-	padding: 4px;
-}
-
-td {
-	border: 1px solid var(--gb-light-grey);
-     padding: 4px;
-	}
-
-table.docinfo {
-  margin: 2em 4em }
-
-table.docutils {
-  margin-top: 0.5em ;
-  margin-bottom: 0.5em }
-
-table.footnote {
-  border-left: solid 1px black;
-  margin-left: 1px }
-
-table.docutils td, table.docutils th,
-table.docinfo td, table.docinfo th {
-  padding-left: 0.5em ;
-  padding-right: 0.5em ;
-  vertical-align: top }
-
-table.docutils th.field-name, table.docinfo th.docinfo-name {
-  font-weight: bold ;
-  text-align: left ;
-  white-space: nowrap ;
-  padding-left: 0 }
-
-/* "booktabs" style (no vertical lines) */
-table.docutils.booktabs {
-  border: 0px;
-  border-top: 2px solid;
-  border-bottom: 2px solid;
-  border-collapse: collapse;
-}
-table.docutils.booktabs * {
-  border: 0px;
-}
-table.docutils.booktabs th {
-  border-bottom: thin solid;
-  text-align: left;
+pre { 
+	background-color: #eeeeee; }
+samp, em {
+  color: #D33682;
 }
 
 h1 tt.docutils, h2 tt.docutils, h3 tt.docutils,
