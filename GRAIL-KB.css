@@ -198,6 +198,9 @@ h6 {
 
 code {
 		border: 1px solid #efefef;
+		font-size: .95em;
+		border-style: Roboton
+
 		color: #1F6683;
 		background-color: #D9D9D9;	
 		font-family: 'Share Tech Mono', monospace; }
@@ -745,6 +748,8 @@ pre.literal-block, pre.doctest-block, pre.math, pre.code {
   margin-left: 2em ;
   margin-right: 2em ;}
 
+.pep-page pre.literal-block
+
 pre.code .ln { color: grey; } /* line numbers */
 pre.code, code { background-color: #eeeeee }
 pre.code .comment, code .comment { color: #5C6576 }
@@ -797,20 +802,20 @@ pre {
 
 span pre {
 	border: 1px solid #efefef;
-    color: #1F6683;
+    color: #c7254e;
     background-color: #D9D9D9; 
 	font-family: 'Share Tech Mono', monospace; }
 
-em span.pre {
+code em span.pre {
 	border: 1px solid #efefef;
-	color: #c7254e; 
+	color: #c7254e ! important;  
     background-color: #D9D9D9; 
 	font-family: 'Share Tech Mono', monospace; }
 
 
 samp {
 	border: 1px solid #efefef;
-    color: #1F6683;
+    color: #c7254e;
     background-color: #D9D9D9; }
 
 
