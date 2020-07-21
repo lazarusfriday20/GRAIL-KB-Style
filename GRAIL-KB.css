@@ -769,12 +769,10 @@ span.option {
   white-space: nowrap; }
 
 span.pre {
-  white-space: pre;
- }
-em span.pre {
+    white-space: pre;
     color: #D33682;
     font-weight: bold;
-    background-color: #D9D9D9 }
+    background-color: #D9D9D9; }
  
 span.problematic {
   color: red; }
@@ -819,3 +817,4 @@ h4 tt.docutils, h5 tt.docutils, h6 tt.docutils {
 ul.auto-toc {
   list-style-type: none }
 
+</style>
