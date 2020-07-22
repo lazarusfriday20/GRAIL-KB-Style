@@ -1,3 +1,4 @@
+
 /*
 :Author: David Goodger (goodger@python.org)
 :Id: $Id: html4css1.css 7952 2016-07-26 18:15:59Z milde $
@@ -540,7 +541,7 @@ div.abstract p.topic-title {
 div.admonition {
 	border-left-style: solid;
 	border-left-width: 0.5rem; 
-	margin: 2em, 2em;
+	margin: 2em;
 	max-width: 70%;
 	padding-bottom: 1em;
 	padding: 0.5rem;
