@@ -28,11 +28,26 @@ customize this style sheet.
 @import url(html4css1.css);
 /* start root */
 :root {
+	*
+/* Font Scale:
+/* 	This stylesheet follows a major third visual type scale
+/* 	according to https://type-scale.com/. 
+/* 	Base font size is defined below */ 
+	--gb-base: 16px;
+	--gb-h1: 3.052em; 
+	--gb-h2: 2.441em;
+	--gb-h3: 1.953em;
+	--gb-h4: 1.563em;
+	--gb-h5: 1.250em;
+	--gb-small: 0.8em;
 
+/* */
+	color: var(--gb-dark-grey);
+	font-weight: thin; 
 /* base font */
 /* open to suggestions */
 	font-family: 'Lato', sans-serif;
-	font-size: var(--gb-base-size);
+	font-size: var(--gb-base);
 	font-weight: thin;
 	--ms-text-size-adjust: 100%;
 	--webkit-text-size-adjust: 100%; 
@@ -115,9 +130,9 @@ customize this style sheet.
   }
 }
 
-body{
+body {
 
-	font-size: var(--gb-base-size);
+	font-size: var(--gb-base);
 	margin-top: 1em; 
 	margin-bottom: 1em;
 	--ms-text-size-adjust: 100%;
