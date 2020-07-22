@@ -541,7 +541,7 @@ div.abstract p.topic-title {
 div.admonition {
 	border-left-style: solid;
 	border-left-width: 0.5rem; 
-	margin: 2.5em;
+	margin: 2.5em, 2em, 0, 2.5em;
 	max-width: 70%;
 	padding-bottom: 1em;
 	padding: 0.5rem;
