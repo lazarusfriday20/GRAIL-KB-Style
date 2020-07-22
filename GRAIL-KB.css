@@ -9,8 +9,8 @@ See http://docutils.sf.net/docs/howto/html-stylesheets.html for how to
 customize this style sheet.
 */
 
-
 /* :theme: Horizontal Bob 
+ * :author: Pierce Devol (pierce@devol.me)
  *
  * Adapted by Pierce Devol for use with clients */
 /*
@@ -353,10 +353,10 @@ td {
     padding: 4px; }
 
 table.docinfo {
-  margin: 1em 2em }
+  margin: 2em 4em }
 
 table.docutils {
-  margin: 1em 2em }
+  margin: 2em 4em }
 
 table.footnote {
   border-left: solid 1px black;
@@ -507,7 +507,7 @@ blockquote.glossary {
 
 
 blockquote.epigraph {
-  margin: 1em 2em ; }
+  margin: 2em 5em ; }
 
 dl dt {
 	font-weight: bold;
@@ -529,7 +529,7 @@ dl.docutils dt {
 
 
 div.abstract {
-  margin: 1em 2em }
+  margin: 2em 5em }
 
 div.abstract p.topic-title {
   font-weight: bold ;
@@ -540,7 +540,7 @@ div.abstract p.topic-title {
 div.admonition {
 	border-left-style: solid;
 	border-left-width: 0.5rem; 
-	margin: 1em;
+	margin: 2em, 2em;
 	max-width: 70%;
 	padding-bottom: 1em;
 	padding: 0.5rem;
@@ -602,7 +602,7 @@ div.compound .compound-last, div.compound .compound-middle {
 */
 
 div.dedication {
-  margin: 1em ;
+  margin: 2em 5em ;
   text-align: center ;
   font-style: italic }
 
@@ -611,8 +611,8 @@ div.dedication p.topic-title {
   font-style: normal }
 
 div.figure {
-  margin-left: 1em ;
-  margin-right: 1em }
+  margin-left: 2em ;
+  margin-right: 2em }
 
 div.footer, div.header {
   clear: both;
@@ -662,7 +662,7 @@ div.system-message p.system-message-title {
   font-weight: bold }
 
 div.topic {
-  margin: 1em }
+  margin: 2em }
 
 h1.section-subtitle, h2.section-subtitle, h3.section-subtitle,
 h4.section-subtitle, h5.section-subtitle, h6.section-subtitle {
@@ -806,8 +806,8 @@ pre.address {
   font: inherit ;}
 
 pre.literal-block, pre.doctest-block, pre.math, pre.code {
-  margin-left: 1em ;
-  margin-right: 1em ; }
+  margin-left: 2em ;
+  margin-right: 2em ; }
 
 .pep-page pre.literal-block
 
