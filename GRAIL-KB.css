@@ -42,6 +42,7 @@ customize this style sheet.
 	--gb-small: 0.8em;
 
 /* */
+
 	color: var(--gb-dark-grey);
 	font-weight: thin; 
 /* base font */
@@ -352,10 +353,10 @@ td {
     padding: 4px; }
 
 table.docinfo {
-  margin: 2em 4em }
+  margin: 1em 2em }
 
 table.docutils {
-  margin: 2em 4em }
+  margin: 1em 2em }
 
 table.footnote {
   border-left: solid 1px black;
@@ -506,7 +507,7 @@ blockquote.glossary {
 
 
 blockquote.epigraph {
-  margin: 2em 5em ; }
+  margin: 1em 2em ; }
 
 dl dt {
 	font-weight: bold;
@@ -528,7 +529,7 @@ dl.docutils dt {
 
 
 div.abstract {
-  margin: 2em 5em }
+  margin: 1em 2em }
 
 div.abstract p.topic-title {
   font-weight: bold ;
@@ -539,7 +540,7 @@ div.abstract p.topic-title {
 div.admonition {
 	border-left-style: solid;
 	border-left-width: 0.5rem; 
-	margin: 3em;
+	margin: 1em;
 	max-width: 70%;
 	padding-bottom: 1em;
 	padding: 0.5rem;
@@ -601,7 +602,7 @@ div.compound .compound-last, div.compound .compound-middle {
 */
 
 div.dedication {
-  margin: 2em 5em ;
+  margin: 1em ;
   text-align: center ;
   font-style: italic }
 
@@ -610,8 +611,8 @@ div.dedication p.topic-title {
   font-style: normal }
 
 div.figure {
-  margin-left: 2em ;
-  margin-right: 2em }
+  margin-left: 1em ;
+  margin-right: 1em }
 
 div.footer, div.header {
   clear: both;
@@ -661,7 +662,7 @@ div.system-message p.system-message-title {
   font-weight: bold }
 
 div.topic {
-  margin: 2em }
+  margin: 1em }
 
 h1.section-subtitle, h2.section-subtitle, h3.section-subtitle,
 h4.section-subtitle, h5.section-subtitle, h6.section-subtitle {
@@ -805,8 +806,8 @@ pre.address {
   font: inherit ;}
 
 pre.literal-block, pre.doctest-block, pre.math, pre.code {
-  margin-left: 2em ;
-  margin-right: 2em ; }
+  margin-left: 1em ;
+  margin-right: 1em ; }
 
 .pep-page pre.literal-block
 
