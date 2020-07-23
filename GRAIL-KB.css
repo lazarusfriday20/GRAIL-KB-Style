@@ -1,4 +1,3 @@
-
 /*
 :Author: David Goodger (goodger@python.org)
 :Id: $Id: html4css1.css 7952 2016-07-26 18:15:59Z milde $
@@ -497,7 +496,6 @@ a.toc-backref {
 blockquote {
 	font-color: var(--gb-dark-grey); 
 	font-weight: 350; 
-	background-color: var(--gb-light-grey) ! important;
 	padding: 2px;
 	padding-left: 12px; }
 
