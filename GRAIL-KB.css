@@ -411,6 +411,9 @@ table tr:nth-child(even) {
 table tr:nth-child(odd) {
   background-color: white; }
 
+li {
+	padding-bottom: .25rem ; }
+
 table ul li,
 table ol li {
   margin-top: 5px;
@@ -728,46 +731,30 @@ div.align-right {
 
 
 
-div.simple
-ol.simple, ul.simple { 
+div.simple, ol.simple, ul.simple { 
   font-family: 'Lato', sans-serif;
-  font-size: 16px;
-  font-weight: thin; 
 
 }
 
 ol.arabic { 
   font-family: 'Lato', sans-serif;
-  font-size: 16px;
-  font-weight: thin; 
-
-  list-style: decimal; }
+  list-style-type: decimal; }
 
 ol.loweralpha { 
   font-family: 'Lato', sans-serif;
-  font-size: 16px;
-  font-weight: thin; 
-
-  list-style:  decimal; }
+  list-style-type: lower-alpha; }
 
 ol.upperalpha { 
   font-family: 'Lato', sans-serif;
-  font-size: 16px;
-  font-weight: thin; 
-
-  list-style: decimal; }
+  list-style-type: upper-alpha; }
 
 ol.lowerroman { 
   font-family: 'Lato', sans-serif;
-  font-size: 16px;
-  font-weight: thin; 
-
-  list-style: decimal; }
+  list-style-type: lower-alpha; }
 
 ol.upperroman { 
   font-family: 'Lato', sans-serif;
-  font-size: 6px;
-  font-weight: thin; 
+  list-style-type: upper-alpha; }
 
 
 p.attribution {
